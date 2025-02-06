@@ -1,29 +1,34 @@
-import react from 'react';
-import { Link } from 'react-router-dom';
-import './Header.scss';
-import logo from '../image/logo.png';
-
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Header.scss";
+import logo from "../image/logo.png";
 
 const Header = () => {
-return (
-<header className="header">
-        <div className="logo">
-                <img src={logo} alt="The Capital Tree Logo" />
-                  <span>TheCapitalTree</span>
-       </div>
-        <nav>
-          <ul className="nav-menu">
-            <li><Link className="nav-link" to="/Homepage">Home</Link></li>
-            <li><Link className="nav-link" to="/about">About</Link></li>
-            <li><Link className="nav-link" to="/support">Support</Link></li>
-            <li><Link className="nav-link" to="/Login">Login</Link></li>
-            <li><Link ClassName="nav-link" to="/Learn">Learn</Link></li>
-            <li><Link ClassName="nav-link" to="/Invest">Invest</Link></li>
-            <li><Link ClassName="nav-link" to="/SwpCalculator">Swpcalculator</Link></li>
-          </ul>
-        </nav>
-      </header>
-);
-}
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header className="header">
+      <div className="logo">
+        <img src={logo} alt="The Capital Tree Logo" />
+        <h6 className="Tag-line">"Cultivating Growth, One Investment at a Time"</h6>
+
+        <span>TheCapitalTree</span>
+      </div>
+
+      
+      <nav>
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <li><Link className="nav-link" to="/">Home</Link></li>
+          <li><Link className="nav-link" to="/about">About</Link></li>
+          <li><Link className="nav-link" to="/support">Support</Link></li>
+          <li><Link className="nav-link" to="/invest">Invest</Link></li>
+          <li><Link className="nav-link" to="/swp-calculator">SWP Calculator</Link></li>
+          <li><Link className="nav-link" to="/learn">Learn</Link></li>
+          <li><Link className="nav-link" to="/login">Login</Link></li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
 export default Header;

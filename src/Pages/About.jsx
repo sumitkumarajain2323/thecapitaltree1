@@ -1,12 +1,12 @@
 import React from 'react';
 import './About.scss';
-import './Homepage.scss';
-import './Support.scss';
 import Header from '../Component/Header';
 
 const About = () => {
   return (
     <div className="about-container">
+      
+      
       <Header/>
 
       {/* Main Content */}

@@ -7,41 +7,6 @@
     color: var(--black);
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--primary-color);
-    color: var(--white);
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-right: 1rem;
-}
-
-.nav-menu {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: var(--accent-color);
-}
-
 .main-content {
     flex-grow: 1;
     padding: 2rem;

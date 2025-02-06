@@ -1,4 +1,4 @@
-
+/* Reset and Box Sizing */
 *,
 *::before,
 *::after {
@@ -7,18 +7,17 @@
     padding: 0;
 }
 
-
 :root {
     --primary-color: #5848c2;
     --secondary-color: #6f14d1;
     --accent-color: #dfcefd;
     --black: #000000;
     --white: #ffffff;
+    --lavender: #E6E6FA; /* Lavender color for buttons */
 }
 
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: var(--accent-color);
     color: var(--black);
     overflow-x: hidden;
@@ -31,27 +30,88 @@ body {
     min-height: 100vh;
 }
 
-
 /* Main Content */
 .main-content {
-    flex-grow: 10;
-    padding: 40rem;
+    flex-grow: 1;
+    padding: 4rem 2rem;
     background-color: var(--white);
     text-align: center;
 }
 
 /* Main Heading */
 .main-heading {
-    padding: 5rem;
     font-size: 2.5rem;
     color: var(--secondary-color);
+    margin-bottom: 2rem;
 }
 
-/* Description */
-.description-text {
+/* Description Section */
+.description-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+}
+
+.description-section h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+.description-section p {
     font-size: 1.2rem;
-    margin: 1rem 0;
     color: var(--black);
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
+/* Service List */
+.description-section li {
+    list-style-type: none;
+    font-size: 1.2rem;
+    background: var(--accent-color);
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button {
+    background-color: var(--lavender);
+    color: var(--black);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Newsletter Form */
+form {
+    margin-top: 2rem;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 0.8rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 /* Footer */
@@ -60,4 +120,5 @@ body {
     background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
+    margin-top: 2rem;
 }

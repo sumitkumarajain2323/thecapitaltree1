@@ -6,6 +6,7 @@ import Dashboard from "./Pages/Dashboard.jsx"; // Corrected path
 import About from './Pages/About';
 import Support from './Pages/Support';
 import Invest from './Pages/Invest';
+import Learn from './Pages/Learn'; 
 //import SwpCalculator from './Pages/SwpCalculator';
 import './App.css';
 
@@ -21,7 +22,8 @@ function App() {
             <Route path="/invest" element={<Invest />} />
             <Route path="/about" element={<About />} />
             <Route path="/support" element={<Support />} />
-
+            <Route path="/learn" element={<Support />} />
+            {/* <Route path="/swpcalculator" element={<SwpCalculator />} /> */}
           </Routes>
         </div>
       </Router>

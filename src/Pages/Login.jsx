@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import Dashboard from "./Dashboard";
 import "./Login.scss";
 import './Dashboard.jsx';
+import logo1 from '../image/logo1.png';
+import Header from '../Component/Header';
+
 
 
 const LoginRegister = () => {
+
+      <Header/>
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isRegister, setIsRegister] = useState(false);
 
@@ -32,7 +38,9 @@ const LoginRegister = () => {
     <div className="auth-container">
       <div className="auth-card">
         <div className="logo-section">
-          <div className="logo">&#967;</div>
+          <div className="logo">
+            <img src={logo1} alt="The Capital Tree Logo" />
+          </div>
           <h1 className="brand-name">TheCapitalTree</h1>
         </div>
         {isRegister ? (
