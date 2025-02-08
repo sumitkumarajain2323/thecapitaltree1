@@ -1,6 +1,7 @@
 import React from 'react';
 import './Support.scss';
 import Header from '../Component/Header';
+import Footer from '../Component/Footer';
 
 const Support = () => {
   return (
@@ -10,7 +11,7 @@ const Support = () => {
       {/* Main Content */}
       <main className="main-content">
         <section className="services-section">
-          <h1 className="main-heading">Our Services</h1>
+          <h1 className="main-heading">Our Support</h1>
           <p className="services-text">
             Discover the range of services we offer to help you manage your investments and achieve your goals.
           </p>
@@ -18,9 +19,7 @@ const Support = () => {
       </main>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>&copy; 2025 The Capital Tree. Powered by the Medro . All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

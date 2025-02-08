@@ -1,6 +1,7 @@
 import React from 'react';
 import './SwpCalculator.scss';
 import Header from '../Component/Header';
+import Footer from '../Component/Footer';
 
 function Swpcalculator() {
     <Header/>
@@ -15,9 +16,7 @@ function Swpcalculator() {
             </p>
             </section>
         </main>
-        <footer className="footer">
-            <p>&copy; 2025 The Capital Tree. Powered by the Medro . All rights reserved.</p>
-        </footer>
+        <Footer/>
         </div>
     );
 }

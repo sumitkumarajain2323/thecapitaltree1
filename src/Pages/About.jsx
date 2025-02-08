@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.scss';
 import Header from '../Component/Header';
+import Footer from '../Component/Footer';
 
 const About = () => {
   return (
@@ -12,17 +13,18 @@ const About = () => {
       {/* Main Content */}
       <main className="main-content">
         <section className="about-section">
-          <h1 className="main-heading">About Us</h1>
-          <p className="about-text">
-            Learn more about The Capital Tree and our mission to provide seamless management solutions.
-          </p>
+        <h2>About us </h2>
+          <h3>Why Choose the Capital Tree?</h3>
+          <p>At The Capital Tree, we blend innovative strategies with rigorous analysis to help our clients achieve sustainable financial growth. Our team of 
+            seasoned experts specializes in diversified investment portfolios tailored to your goals</p>
+
+            
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>&copy; 2025 The Capital Tree. Powered by the Medro . All rights reserved.</p>
-      </footer>
+      <Footer />
+      
     </div>
   );
 }

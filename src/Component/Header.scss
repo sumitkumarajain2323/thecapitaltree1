@@ -2,7 +2,7 @@
 :root {
     --primary-color: #5848c2;
     --secondary-color: #6f14d1;
-    --accent-color: #dfcefd;
+    --accent-color: white;
     --gold: #ffd700;
     --white: #ffffff;
 }
@@ -52,10 +52,10 @@ body {
 .Tag-line {
     display: flex;
     font-size: 0.4rem;
-    color: white;
+    color: #D3D3D3;
     margin-top: 55px;
-    margin-left: -25px;
-    margin-right: -45px;
+    margin-left: -5px;
+    margin-right: -145px;
 }
 /* Navigation Menu */
 .nav-links {

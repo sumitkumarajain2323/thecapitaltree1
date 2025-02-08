@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import Dashboard from "./Dashboard";
 import "./Login.scss";
-import './Dashboard.jsx';
-import logo1 from '../image/logo1.png';
 import Header from '../Component/Header';
-
-
+import logo1 from './image/logo1.png';
 
 const LoginRegister = () => {
-
-      <Header/>
-
+    
+    
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isRegister, setIsRegister] = useState(false);
 
@@ -36,10 +32,11 @@ const LoginRegister = () => {
 
   return (
     <div className="auth-container">
+      <Header />
       <div className="auth-card">
-        <div className="logo-section">
-          <div className="logo">
-            <img src={logo1} alt="The Capital Tree Logo" />
+        <div className="logo-section1">
+          <div className="logo1">
+          <img src={logo1} alt="The Capital Tree Logo" className="logo1-img" />
           </div>
           <h1 className="brand-name">TheCapitalTree</h1>
         </div>
@@ -106,4 +103,3 @@ const LoginRegister = () => {
 };
 
 export default LoginRegister;
-
