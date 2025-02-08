@@ -1,0 +1,73 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 100%;
+    height: 8vh;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the header is above other elements */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px; /* Moves logo to the top */
+    left: 20px; /* Moves logo to the left */
+}
+
+/* Logo Image */
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+/* Logo Text */
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:black ;
+    line-height: 40px; /* Aligns text with the image */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    top: 10px; /* Moves nav menu to the top */
+    right: 20px; /* Moves nav menu to the right */
+}
+
+/* Navigation Links */
+.nav-link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+
+.nav-link:hover {
+    color: var(--accent-color);
+}

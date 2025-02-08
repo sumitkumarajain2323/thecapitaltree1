@@ -1,0 +1,37 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: var(--accent-color);
+    color: var(--black);
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    width: 100vw;
+}
+
+.about-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
