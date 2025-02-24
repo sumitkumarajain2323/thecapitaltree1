@@ -1,4 +1,209 @@
-*{
-    margin: 0;
-    padding: 0;
+.swpcalculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    min-height: 100vh;
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.main-content-swp {
+    width: 100%;
+    background: #D1CAFC;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 8px; 
+    box-sizing: border-box;
+}
+
+.swpcalculator-section {
+    position: relative;
+    background: white;
+    border-radius: 25px;
+    padding: 20px;
+    padding-left: 120px;
+    width: 43%;
+    margin-left: 100px;
+    box-shadow: 5px 10px 8px 10px #888888;   
+}
+
+
+.display-button{
+    flex-direction: row;
+}
+
+.main-heading-swp {
+    font-size: 28px;
+    text-align: center;
+    color: #5848c2;
+    margin-bottom: 20px;
+    margin-right: 100px;
+
+}
+
+.swpcalculator-display,
+.swpcalculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    min-width: 200px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 20vw;
+    transition: border 0.3s;
+    margin-right: 600px;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #5848c2;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input[type="range"] {
+      
+    height: 1em;
+    border-radius: 5px;
+    outline: none;
+    width: 27.7vw;
+    margin-top: 5px;
+}
+
+
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    background: #5848c2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.investment-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-btn {
+    background: #5848c2;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition:  0.3s; 
+}
+
+#investmentPeriod{
+    width: 45px;
+}
+.control-btn:hover {
+    background: #3e30a1;
+}
+
+.results-container {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 28vw;
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.result-label {
+    font-weight: bold;
+}
+
+.calculate{
+    display: flex;
+    flex-direction: row;
+    background-color: #5848c2;
+    margin-left: 150px;
+}
+
+.circle-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 250px;
+    border-left: 20px solid #16B47A;
+    border-right: 20px solid #5848C2;
+    border-top: 20px solid #5848C2;
+    border-bottom: 20px solid #16B47A;
+    background: white; /* Center color */
+    border-radius: 50%;
+    position: absolute;
+    right: -500px; /* Adjusted for better positioning */
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: conic-gradient(
+        white 0deg, white 44deg, 
+        #5848c2 45deg, #5848c2 90deg, 
+        #5848c2 90deg, white 90deg, 
+        white 270deg
+    );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin-left: 100px;
+}
+
+
+.circle-design:hover{
+    background: url(../image/logoswp.png);
+    width: 290px;
+    height: 250px;
+}
+
+.display-button{
+    display: flex;
+    justify-self: center;
+    margin-left: 20px;
+    margin-bottom: -350px;
+    background-color: #5848C2;
 }

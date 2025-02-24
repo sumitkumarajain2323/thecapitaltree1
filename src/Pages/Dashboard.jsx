@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Dashboard.scss";
+import Seo from '../Component/Seo';
 
 const Dashboard = ({ setIsAuthenticated }) => {
   const [activeSection, setActiveSection] = useState("dashboard");

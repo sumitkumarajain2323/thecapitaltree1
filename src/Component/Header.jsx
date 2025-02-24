@@ -9,8 +9,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={logo} alt="The Capital Tree Logo" />
-        <h6 className="Tag-line">"Cultivating Growth, One Investment at a Time"</h6>
+        <img src={logo} alt="The Capital Tree Logo"  title="logo" height="40px" width="60px" loading="eager"/>
+        <p className="Tag-line">"Cultivating Growth, One Investment at a Time"</p>
 
         <span>TheCapitalTree</span>
       </div>

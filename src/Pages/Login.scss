@@ -1,97 +1,103 @@
-/* Login and Register CSS */
+/* Auth Container */
 .auth-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full viewport height */
-  background-color: #dfcefd;
-  padding: 1rem;
+  min-height: 100vh;
+  background: linear-gradient(65deg, #EFE2EF 0 15%, #4858C2 0 25%,#EFE2EF 20% );
+  position: relative;
 }
 
 /* Auth Card */
 .auth-card {
-  background: #dfcefd;
-  padding: 4rem 3rem;
-  border-radius: 24px;
+  background: #fff;
+  background: linear-gradient(to top left, #4858C2 50%,#EAC0EA 50% );
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2rem;
+  border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 400px;
-  width: 100%; /* Keep it responsive */
+  width: 100%;
   text-align: center;
-  
-  /* Fix center alignment */
-  position: fixed;
-  height:fit-content;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 /* Logo Section */
 .logo-section1 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .logo1-img {
-  height: 40px;
+  height: 50px;
   width: auto;
-  margin-top: 10px;
-  margin-right: 150pxpx;
-  border-radius: 60px;
+  margin-bottom: 10px;
+  border-radius: 50%;
 }
 
 /* Brand Name */
 .brand-name {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #6f14d1;
-  margin-bottom: 3rem;
-}
-
-/* Titles */
-.auth-title {
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.auth-subtitle {
-  font-size: 1rem;
+/* Titles */
+.auth-title, .auth-title-log {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
   color: #333;
+}
+
+.auth-subtitle, .auth-subtitle-log {
+  font-size: 1rem;
+  color: #666;
   margin-bottom: 1.5rem;
 }
 
 /* Form */
-.auth-form .form-group {
-  margin-bottom: 1rem;
-  text-align: left;
+.auth-form, .auth-form-log, .otp-form {
+  .form-group, .form-group-log {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      border-color: #6f14d1;
+      outline: none;
+      box-shadow: 0 0 10px rgba(111, 20, 209, 0.5);
+    }
+  }
 }
 
-.auth-form label {
-  font-size: 0.9rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.auth-form input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 1rem;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Input Focus Effect */
-.auth-form input:focus {
-  border-color: #6f14d1;
-  outline: none;
-  box-shadow: 0 0 10px rgba(111, 20, 209, 0.5);
+/* OTP Form */
+.otp-form {
+  margin-top: 1rem;
 }
 
 /* Button */
-.auth-button {
+.auth-button, .auth-button-log {
   width: 100%;
   padding: 0.75rem;
   background: linear-gradient(135deg, #6f14d1, #5848c2);
@@ -102,43 +108,75 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-}
 
-/* Button Hover Effect */
-.auth-button:hover {
-  background: linear-gradient(135deg, #5848c2, #6f14d1);
-  transform: scale(1.05);
+  &:hover {
+    background: linear-gradient(135deg, #5848c2, #6f14d1);
+    transform: scale(1.05);
+  }
 }
 
 /* Toggle Message */
-.toggle-message {
+.toggle-message, .toggle-message-log {
   text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
+
+  button {
+    background: none;
+    border: none;
+    color: #6f14d1;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      color: #4b0f9a;
+    }
+  }
 }
 
-.toggle-message button {
-  background: none;
-  border: none;
-  color: #6f14d1;
-  font-weight: bold;
-  cursor: pointer;
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #6f14d1, #5848c2);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
   font-size: 1rem;
-  transition: color 0.3s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.toggle-message button:hover {
-  text-decoration: underline;
-  color: #4b0f9a;
+/* Responsive Footer Fix */
+@media (max-height: 700px) {
+  .footer {
+    position: relative;
+  }
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 500px) {
   .auth-card {
     width: 90vw;
-    padding: 3rem 2rem;
-    position: static; /* Removes absolute positioning on mobile */
+    padding: 2rem;
+    position: static;
     transform: none;
     margin: auto;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

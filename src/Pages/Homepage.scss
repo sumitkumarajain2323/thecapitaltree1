@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
 }
 
 /* Header */
@@ -41,52 +42,107 @@ header {
 
 /* Main Content */
 .main-content {
-    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 4rem 2rem;
-    background-color: var(--white);
-    text-align: center;
-    height: auto;
+    background: linear-gradient(to bottom right , white 50%,#5848c2 20%, #5848C2 100px,);
+    text-align: initial;
+    flex-wrap: wrap;
 }
 
 /* Main Heading */
 .main-heading {
-    font-size: 2.5rem;
-    color: var(--secondary-color);
+    width:100vw;
+    font-size: 36px;
+    color: black;
     margin-bottom: 2rem;
+    line-height: 1.4;
+    margin-top: -350px;
 }
 
 /* Description Section */
 .description-section {
     max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    flex: 1;
 }
 
 /* Button Container */
 .button-container {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
 }
 
 /* Buttons */
 button {
-    background-color: var(--lavender);
-    color: var(--black);
+    color: white;
     border: none;
-    padding: 0.8rem 1.5rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
-    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
 }
 
 button:hover {
     background-color: var(--secondary-color);
     color: var(--white);
+}
+
+.button1{
+    background-color: #7E68BF;
+}
+
+.button2{
+    background-color: #D26363 ;
+}
+
+.para1{
+    margin-top: 10rem;
+    font-size: medium;
+    max-width: 450px;
+}
+.img-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 800px;
+    margin-top: -50px;
+}
+
+.img-section img {
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px black;
+}
+
+.img-section img:hover {
+    transform: scale(1.2) ;
+}
+
+.mobile1{
+    position: relative;
+    box-shadow: #000000;
+}
+
+.mobile2{
+    margin-top: -50px;
+    margin-right: 100px;
+    margin-left: -40px;
+    
+    position: absolute; 
 }
 
 /* Footer */
@@ -95,5 +151,5 @@ button:hover {
     background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
-    margin-top: 2rem;
+    margin-top: auto;
 }
